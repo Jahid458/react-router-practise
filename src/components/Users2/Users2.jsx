@@ -2,7 +2,7 @@ import React, { use } from 'react'
 
 const Users2 = ({userPromise}) => {
 
-    const users = use(userPromise)
+    const users = use(userPromise);
 
     console.log("User to suspense data laod", users);
   return (
