@@ -1,13 +1,25 @@
 import React from 'react'
+import { Link } from 'react-router';
 
 const User = ({user}) => {
 
-    const {name,email,phone} =user ;
+    const {id,name,email,phone} =user ;
+
+    const userStyle={
+        border: '2px solid yellow',
+        borderRadius: '30px',
+        padding: '10px',
+        margin: '10px'
+    }
   return (
-    <div>
+    <div style={userStyle}>
         <h3>Name: {name}</h3>
         <p>Email: {email}</p>
         <p>Phone: {phone}</p>
+
+        <Link to={`/users/${id}`}>Show Details</Link>
+   
+
     </div>
   )
 }
