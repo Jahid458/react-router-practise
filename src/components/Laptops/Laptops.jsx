@@ -1,7 +1,9 @@
 import React from 'react'
 
-export const Laptops = () => {
+const Laptops = () => {
   return (
-    <h4>Laptops</h4>
+    <h2>This is Laptops</h2>
   )
 }
+
+export default Laptops

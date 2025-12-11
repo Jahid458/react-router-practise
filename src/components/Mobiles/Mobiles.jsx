@@ -1,7 +1,9 @@
 import React from 'react'
 
-export const Mobiles = () => {
+const Mobiles = () => {
   return (
-    <h1>This is a Mobiles</h1>
+    <div>This is Mobiles</div>
   )
 }
+
+export default Mobiles
